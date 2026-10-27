@@ -4,12 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, noarchive">
-<title>Information sur vos données – Mathieu Recatala</title>
-<meta name="description" content="Prospection auprès des syndics : quelles données, pourquoi, combien de temps, et comment vous y opposer.">
+<title>Mathieu Recatala, indépendant</title>
+<meta name="description" content="Je prépare un outil de suivi des sinistres pour les syndics de copropriété. Me joindre, et ce que je fais de vos données.">
 <style>
-  :root { --fond: #ffffff; --texte: #1f2328; --doux: #57606a; --trait: #d0d7de; --repere: #fff3b0; }
+  :root {
+    --fond: #f6f7f9; --carte: #ffffff; --texte: #1c2430; --doux: #5b6675; --trait: #dde2e8;
+    --accent: #1f5f8b; --accent-doux: #e8f1f8; --encadre: #fff7e0; --encadre-trait: #e0b44c;
+  }
   @media (prefers-color-scheme: dark) {
-    :root { --fond: #161b22; --texte: #e6edf3; --doux: #9da7b3; --trait: #30363d; --repere: #5a4a00; }
+    :root {
+      --fond: #11161d; --carte: #18202a; --texte: #e6ebf1; --doux: #9aa6b4; --trait: #2a3441;
+      --accent: #7db8e0; --accent-doux: #1b2b3a; --encadre: #2b2414; --encadre-trait: #8a6d24;
+    }
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
@@ -17,93 +23,137 @@
     margin: 0; background: var(--fond); color: var(--texte);
     font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   }
-  main { max-width: 42rem; margin: 0 auto; padding: 24px 16px 48px; }
-  h1 { font-size: 1.45rem; line-height: 1.3; margin: 0 0 4px; }
-  h2 { font-size: 1.05rem; margin: 28px 0 6px; }
+  main { max-width: 42rem; margin: 0 auto; padding: 32px 16px 48px; }
+  .carte { background: var(--carte); border: 1px solid var(--trait); border-radius: 14px; padding: 24px 20px; margin-bottom: 16px; }
+  h1 { font-size: 1.7rem; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .sous-titre { font-size: 1.08rem; color: var(--doux); margin: 0; }
+  h2 { font-size: 1.15rem; margin: 0 0 10px; }
+  h3 { font-size: 1rem; margin: 22px 0 6px; }
   p, ul { margin: 0 0 12px; }
+  p:last-child { margin-bottom: 0; }
   ul { padding-left: 1.2rem; }
   li { margin-bottom: 10px; }
-  .date { color: var(--doux); font-size: .9rem; margin-bottom: 20px; }
-  .opposition { border-left: 4px solid var(--texte); padding: 2px 0 2px 12px; }
-  mark { background: var(--repere); color: inherit; padding: 0 2px; }
-  a { color: inherit; overflow-wrap: anywhere; }
-  footer { margin-top: 32px; padding-top: 12px; border-top: 1px solid var(--trait); color: var(--doux); font-size: .9rem; }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+  .contacts { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 10px; }
+  .bouton {
+    display: inline-block; padding: 10px 16px; border-radius: 10px; text-decoration: none; font-weight: 600;
+    background: var(--accent-doux); color: var(--accent); border: 1px solid var(--trait);
+  }
+  .note { color: var(--doux); font-size: .95rem; }
+  .opposition { background: var(--encadre); border: 1px solid var(--encadre-trait); border-radius: 14px; padding: 18px 20px; margin-bottom: 16px; }
+  .opposition h2 { margin-bottom: 6px; }
+  .notice h2 { font-size: 1.2rem; }
+  .date { color: var(--doux); font-size: .9rem; margin-bottom: 4px; }
+  footer { padding: 4px 4px 0; color: var(--doux); font-size: .88rem; }
+  footer a { color: inherit; }
 </style>
 </head>
 <body>
 <main>
-<h1>Prospection : information sur vos données</h1>
-<p class="date">Notice mise à jour le 20/10/2026.</p>
-<p>Cela concerne seulement ma liste d'appel et mes notes, pas les mails de votre cabinet.</p>
 
-<h2>Qui traite vos données ?</h2>
-<p>Mathieu Recatala EI, indépendant, SIRET 993 496 520 00012,
-mathieu.recatala@gmail.com, 07 82 58 19 59.</p>
+<section class="carte">
+  <h1>Mathieu Recatala</h1>
+  <p class="sous-titre">Indépendant. Je prépare un outil de suivi des sinistres pour les syndics de copropriété.</p>
+</section>
 
-<h2>Vous opposer à la prospection</h2>
-<p class="opposition">À tout moment et sans avoir à vous justifier : dites-le-moi au téléphone ou écrivez à
-mathieu.recatala@gmail.com. Je ne vous appellerai plus.</p>
+<section class="carte">
+  <h2>Ce que je prépare</h2>
+  <p>Dans un cabinet de syndic, un dossier sinistre peut rester des semaines sans nouvelles : l'expert n'a pas
+  répondu, l'artisan non plus, et on s'en aperçoit quand le copropriétaire appelle.</p>
+  <p>Ce sera un assistant qui, chaque matin, dira à la personne qui suit les sinistres quels dossiers attendent
+  une relance, avec un brouillon de relance prêt. Aucun mail ne partira sans son accord. Sur Outlook (Microsoft 365)
+  d'abord.</p>
+  <p>Il n'est pas encore en service. En ce moment, j'appelle des cabinets pour leur présenter ce projet et comprendre
+  comment ils suivent leurs sinistres aujourd'hui.</p>
+</section>
 
-<h2>Quelles données ?</h2>
-<p>Le nom de l'entreprise, son numéro de téléphone professionnel, son site et son adresse e-mail générique si elle
-en publie une, ou l'adresse que vous m'avez donnée ; le nom et la fonction de son dirigeant tels qu'ils figurent au registre public ; la taille de son
-activité de syndic (nombre de copropriétés et de lots) ; la messagerie utilisée par l'entreprise. Si nous nous
-parlons, mes notes d'appel : les difficultés que vous citez, la fonction de la personne qui suit les sinistres (pas
-son nom), le nombre approximatif de sinistres ouverts, les outils que vous utilisez (messagerie, IA), un éventuel rendez-vous, et votre éventuel
-refus d'être recontacté.</p>
+<section class="carte">
+  <h2>Me joindre</h2>
+  <p>Une question, ou vingt minutes pour en parler ?</p>
+  <div class="contacts">
+    <a class="bouton" href="tel:+33782581959">07 82 58 19 59</a>
+    <a class="bouton" href="mailto:mathieu.recatala@gmail.com">mathieu.recatala@gmail.com</a>
+  </div>
+  <p class="note">C'est moi qui décroche, pas un standard.</p>
+</section>
 
-<h2>D'où viennent-elles ?</h2>
-<p>Du registre national d'immatriculation des copropriétés (Anah, données publiques), du registre public des
-entreprises (annuaire-entreprises.data.gouv.fr), du site internet de votre entreprise pour le numéro de téléphone,
-et des informations techniques publiques de son nom de domaine (enregistrements DNS) pour savoir quelle messagerie
-elle utilise. Notes d'appel : notre conversation.</p>
+<section class="opposition">
+  <h2>Vous ne voulez plus que je vous appelle ?</h2>
+  <p>Vous pouvez vous y opposer à tout moment, sans avoir à vous justifier : dites-le-moi au téléphone, ou écrivez
+  « stop » à <a href="mailto:mathieu.recatala@gmail.com?subject=stop">mathieu.recatala@gmail.com</a>. Je ne vous
+  contacterai plus et je n'utiliserai plus vos données pour vous démarcher.</p>
+</section>
 
-<h2>Pourquoi, et sur quelle base ?</h2>
-<p>Pour vous proposer un assistant de suivi de vos dossiers sinistres et des services d'automatisation liés à votre
-activité professionnelle. Base légale : intérêt légitime, faire connaître mon service à des professionnels dont
-l'activité est concernée. Sur simple demande, je vous explique comment j'ai mis en balance cet intérêt et vos
-droits. Aucune décision automatisée n'est prise à votre sujet.</p>
+<section class="carte notice">
+  <h2>Vos données : ce que je garde et pourquoi</h2>
+  <p class="date">Mise à jour le 27/10/2026.</p>
+  <p>Cette partie concerne seulement ma liste d'appel et mes notes, jamais les mails de votre cabinet.</p>
 
-<h2>Combien de temps ?</h2>
-<p>Trois ans à compter de la collecte de vos données ou, si vous m'avez répondu ou écrit, de votre dernier contact,
-puis suppression. Si vous refusez d'être contacté, je supprime tout le reste et ne garde que le nom de l'entreprise
-et son numéro dans une liste d'opposition, pendant trois ans, uniquement pour ne plus vous appeler.</p>
+  <h3>Qui en est responsable ?</h3>
+  <p>Mathieu Recatala EI, indépendant, SIRET 993 496 520 00012, mathieu.recatala@gmail.com, 07 82 58 19 59.</p>
 
-<h2>Qui reçoit vos données ?</h2>
-<p>Je suis seul à les utiliser. Je ne les vends ni ne les loue. Mes fichiers de suivi (liste d'appel et notes) sont
-conservés sur mon ordinateur. Deux services en ligne en reçoivent aussi une partie :</p>
-<ul>
-  <li><strong>Claude</strong>, l'assistant d'intelligence artificielle de la société Anthropic. Il m'a servi à
-  préparer la liste d'appel et me sert à résumer mes notes d'appel. Anthropic Ireland, Limited (Dublin, Irlande)
-  décide elle-même de l'usage de ces données, selon ses propres règles
-  (<a href="https://www.anthropic.com/legal/non-user-privacy-policy">anthropic.com/legal/non-user-privacy-policy</a>) ;
-  vous pouvez exercer vos droits directement auprès d'elle :
-  <a href="mailto:privacy@anthropic.com">privacy@anthropic.com</a>. L'utilisation de mes conversations pour
-  entraîner ses modèles est désactivée.
-  Anthropic peut quand même utiliser une conversation signalée par ses contrôles de sécurité.</li>
-  <li><strong>Gmail</strong>, la messagerie de Google, pour nos éventuels échanges par e-mail. Google Ireland
-  Limited (Dublin, Irlande) décide elle-même de l'usage de ces e-mails, selon ses propres règles
-  (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>).</li>
-</ul>
+  <h3>Quelles données ?</h3>
+  <p>Le nom de l'entreprise, son numéro de téléphone professionnel, son site et son adresse e-mail générique si elle
+  en publie une, ou l'adresse que vous m'avez donnée ; le nom et la fonction de son dirigeant tels qu'ils figurent
+  au registre public ; la taille de son activité de syndic (nombre de copropriétés et de lots) ; la messagerie
+  utilisée par l'entreprise. Si nous nous sommes parlé, mes notes d'appel : les difficultés que vous avez citées, la
+  fonction de la personne qui suit les sinistres (pas son nom), le nombre approximatif de sinistres ouverts, les
+  outils que vous utilisez (messagerie, IA), quand vous rappeler, un éventuel rendez-vous et, le cas échéant, votre
+  refus d'être recontacté. Vous n'êtes pas obligé de répondre à mes questions.</p>
 
-<h2>Transferts hors de l'Union européenne</h2>
-<p>Anthropic et Google sont des groupes américains et peuvent traiter vos données aux États-Unis. Anthropic indique
-s'appuyer pour cela sur les clauses contractuelles types de la Commission européenne. Google LLC est certifiée au
-cadre de protection des données UE–États-Unis (Data Privacy Framework), reconnu par la Commission européenne, et
-Google indique s'appuyer aussi sur ces clauses.</p>
+  <h3>D'où viennent-elles ?</h3>
+  <p>Du registre national d'immatriculation des copropriétés (Anah, données publiques) et du registre public des entreprises
+  (annuaire-entreprises.data.gouv.fr). Le numéro de téléphone et l'adresse e-mail générique viennent du site de votre
+  entreprise, ou m'ont été donnés au téléphone. La messagerie utilisée (Microsoft, Google ou autre) se lit dans les informations publiques liées au
+  nom de domaine de votre site (les enregistrements DNS). Les notes viennent de notre conversation.</p>
 
-<h2>Vos autres droits</h2>
-<p>Vous pouvez demander l'accès à vos données, leur rectification, leur effacement ou la limitation de leur
-traitement, et définir des directives sur le sort de vos données après votre décès, en écrivant à
-mathieu.recatala@gmail.com. Réponse sous un mois. Vous pouvez
-aussi introduire une réclamation auprès de la CNIL (<a href="https://www.cnil.fr">cnil.fr</a>).</p>
+  <h3>Pourquoi, et sur quelle base ?</h3>
+  <p>Pour vous proposer un assistant de suivi de vos dossiers sinistres et des services d'automatisation liés à votre
+  activité professionnelle. Base légale : intérêt légitime, faire connaître mon service à des professionnels dont
+  l'activité est concernée. Sur simple demande, je vous explique comment j'ai mis en balance cet intérêt et vos
+  droits. Aucune décision automatisée n'est prise à votre sujet.</p>
 
-<footer>
-<p><strong>Mentions légales.</strong> Éditeur et directeur de la publication : Mathieu Recatala EI,
-77 avenue Marceau, 92400 Courbevoie, 07 82 58 19 59,
-SIRET 993 496 520 00012. Hébergeur : GitHub, Inc., 88 Colin P. Kelly Jr. Street,
-San Francisco, CA 94107, États-Unis, +1 415 857 5430.</p>
+  <h3>Combien de temps ?</h3>
+  <p>Trois ans à compter de la collecte de vos données ou, si vous m'avez répondu ou écrit, de votre dernier contact,
+  puis suppression. Si vous refusez d'être contacté, je supprime tout le reste et ne garde que le nom de l'entreprise
+  et son numéro dans une liste d'opposition, pendant trois ans, uniquement pour ne plus vous appeler.</p>
+
+  <h3>Qui les reçoit ?</h3>
+  <p>Je suis seul à les utiliser. Je ne les vends ni ne les loue. Mes fichiers de suivi (liste d'appel et notes) sont
+  conservés sur mon ordinateur. Deux services en ligne en reçoivent aussi une partie :</p>
+  <ul>
+    <li><strong>Claude</strong>, l'assistant d'intelligence artificielle de la société Anthropic. Il m'a servi à
+    préparer la liste d'appel et me sert à résumer mes notes d'appel. Anthropic Ireland, Limited (Dublin, Irlande)
+    décide elle-même de l'usage de ces données, selon ses propres règles
+    (<a href="https://www.anthropic.com/legal/non-user-privacy-policy">anthropic.com/legal/non-user-privacy-policy</a>) ;
+    vous pouvez exercer vos droits directement auprès d'elle :
+    <a href="mailto:privacy@anthropic.com">privacy@anthropic.com</a>. L'utilisation de mes conversations pour
+    entraîner ses modèles est désactivée. Anthropic peut quand même utiliser une conversation signalée par ses
+    contrôles de sécurité.</li>
+    <li><strong>Gmail</strong>, la messagerie de Google, pour nos éventuels échanges par e-mail. Google Ireland
+    Limited (Dublin, Irlande) décide elle-même de l'usage de ces e-mails, selon ses propres règles
+    (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>).</li>
+  </ul>
+
+  <h3>Transferts hors de l'Union européenne</h3>
+  <p>Anthropic et Google sont des groupes américains et peuvent traiter vos données aux États-Unis. Anthropic indique
+  s'appuyer pour cela sur les clauses contractuelles types de la Commission européenne. Google LLC est certifiée au
+  cadre de protection des données UE-États-Unis (Data Privacy Framework), reconnu par la Commission européenne, et
+  Google indique s'appuyer aussi sur ces clauses. Je vous indique où consulter ces clauses sur simple demande.</p>
+
+  <h3>Vos autres droits</h3>
+  <p>Vous pouvez demander l'accès à vos données, leur rectification, leur effacement ou la limitation de leur
+  traitement, et définir des directives sur le sort de vos données après votre décès, en écrivant à
+  mathieu.recatala@gmail.com. Réponse sous un mois. Vous pouvez aussi introduire une réclamation auprès de la CNIL
+  (<a href="https://www.cnil.fr">cnil.fr</a>).</p>
+</section>
+
+<footer id="mentions">
+  <p><strong>Mentions légales.</strong> Éditeur et directeur de la publication : Mathieu Recatala EI,
+  77 avenue Marceau, 92400 Courbevoie, 07 82 58 19 59, mathieu.recatala@gmail.com, SIRET 993 496 520 00012.
+  Hébergeur : GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis, +1 415 857 5430.</p>
 </footer>
+
 </main>
 </body>
 </html>
